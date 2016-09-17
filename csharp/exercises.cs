@@ -2,13 +2,13 @@
 
 namespace Progressor.DefaultExercises.CSharp {
 
-	public class Program {
+	public class Exercises {
 
 		static void Main() {
 
-			var program = new Program();
-			Console.WriteLine(program.helloWorld());
-			Console.WriteLine(program.alternate("Hlo ol!", "el,Wrd"));
+			var exercises = new Exercises();
+			Console.WriteLine(exercises.helloWorld());
+			Console.WriteLine(exercises.alternate("Hlo ol!", "el,Wrd"));
 		}
 
 		public string helloWorld() => "Hello, World!";

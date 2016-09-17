@@ -1,5 +1,5 @@
 ﻿
-Public Module Program
+Public Module Exercises
 
 	Friend Sub Main()
 
