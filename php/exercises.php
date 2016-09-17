@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 $out = fopen('php://output', 'wb');
 fwrite($out, helloWorld() . "\n");
 fwrite($out, alternate('Hlo ol!', 'el,Wrd') . "\n");
@@ -32,7 +34,7 @@ function swapEncrypt(array $toSwap, int $length) : array {
 	return $toSwap;
 }
 
-function isPalindrome(string $palindrome) : string {
+function isPalindrome(string $palindrome) : bool {
 	$clean = strtolower(preg_replace('/[^A-Za-z]/', '', $palindrome));
 	for ($i = 0, $j = strlen($clean) - 1; $i < $j; $i++ , $j--);
 		if ($clean[$i] !== $clean[$j]) return false;
