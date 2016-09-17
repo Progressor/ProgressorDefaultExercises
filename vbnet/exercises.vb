@@ -41,15 +41,14 @@ Public Module Exercises
 		Dim i = 0, j = clear.Length - 1
 		While i < j
 			If clear(i) <> clear(j) Then Return False
-			i += 1
-			j -= 1
+			i += 1 : j -= 1
 		End While
 		Return True
 	End Function
 
 	Public Function fibonacci(num As Integer) As Integer
-	If num < 1 Then Return 0
-	If num = 1 Then Return 1
-	Return fibonacci(num - 2) + fibonacci(num - 1)
+		If num < 1 Then Return 0
+		If num = 1 Then Return 1
+		Return fibonacci(num - 2) + fibonacci(num - 1)
 	End Function
 End Module
