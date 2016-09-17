@@ -1,0 +1,6 @@
+.vscode/
+
+test.bat
+*.exe
+*.class
+**/META-INF/
