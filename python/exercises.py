@@ -12,9 +12,7 @@ def alternate(first, second):
 
 def swapEncrypt(toSwap, length):
 	for i in range(0, length - 1, 2):
-		tmp = toSwap[i]
-		toSwap[i] = toSwap[i + 1]
-		toSwap[i + 1] = tmp
+		toSwap[i], toSwap[i + 1] = toSwap[i + 1], toSwap[i]
 	return toSwap
 
 def isPalindrome(palindrome):
