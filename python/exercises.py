@@ -5,13 +5,13 @@ def helloWorld(): return "Hello, World!"
 def alternate(first, second):
 	result = ''
 	I = min(len(first), len(second))
-	for i in range(I - 1):
+	for i in range(I):
 		result += first[i] + second[i]
 	result += first[I:] + second[I:]
 	return result
 
 def swapEncrypt(toSwap, length):
-	for i in range(0, length - 2, 2):
+	for i in range(0, length - 1, 2):
 		tmp = toSwap[i]
 		toSwap[i] = toSwap[i + 1]
 		toSwap[i + 1] = tmp

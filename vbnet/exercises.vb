@@ -28,13 +28,11 @@ Public Module Exercises
 	End Function
 
 	Public Function swapEncrypt(toSwap As Char(), length As Integer) As Char()
-		Dim i = 0
-		While i + 1 < length
+		For i = 0 to length - 2 Step 2
 			Dim tmp = toSwap(i)
 			toSwap(i) = toSwap(i + 1)
 			toSwap(i + 1) = tmp
-			i += 2
-		End While
+		Next
 		Return toSwap
 	End Function
 

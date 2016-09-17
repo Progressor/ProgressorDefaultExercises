@@ -6,7 +6,7 @@ fun main(vararg args: String) {
 	println(String(swapEncrypt("eHll ooWlrd".toCharArray(), 11)))
 	println(isPalindrome("Hello, World!"))
 	println(isPalindrome("A Santa dog lived as a devil God at NASA."))
-	for (i in 0..10)
+	for (i in 0..9)
 		println(fibonacci(i))
 }
 
